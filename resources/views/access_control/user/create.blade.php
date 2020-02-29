@@ -16,9 +16,13 @@
                     <h4 class="page-title">Blog</h4>
                 </div>
 
-                <div class="col-xs-5 text-right m-b-30">
-                    <a href="{{ route('user.index') }}" class="btn btn-primary rounded"><i class="fa fa-list-ul"></i> See List</a>
-                </div>
+                @can('access_control_user_controller_index')
+                    <div class="col-xs-5 text-right m-b-30">
+                        <a href="{{ route('user.index') }}" class="btn btn-primary rounded"><i
+                                class="fa fa-list-ul"></i>
+                            See List</a>
+                    </div>
+                @endcan
             </div>
             <div class="card-box">
                 <div class="row">
@@ -26,14 +30,17 @@
                         {{ BootForm::horizontal(['model'=>$model, 'store' => 'user.store', 'update' => 'user.update','enctype'=>'multipart/form-data','autocomplete'=>'off']) }}
 
 
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
-                                {{ BootForm::text('name', null, null, ['class'=>'form-control input-sm']) }}
-                                {{ BootForm::text('email', null, null, ['class'=>'form-control input-sm']) }}
-                                {{ BootForm::password('password', null, ['class'=>'form-control input-sm']) }}
-                                {{ BootForm::password('password_confirmation', null, ['class'=>'form-control input-sm']) }}
-                                {{ BootForm::select('roles[]', 'Roles', $roles, $selected_roles, ['class'=>'form-control input-sm select2', 'multiple']) }}
-                                {{ BootForm::submit('Submit') }}
-                            </div>
+                        <div
+                            class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+                            {{ BootForm::text('name', null, null, ['class'=>'form-control input-sm']) }}
+                            {{ BootForm::text('email', null, null, ['class'=>'form-control input-sm']) }}
+                            {{ BootForm::password('password', null, ['class'=>'form-control input-sm']) }}
+                            {{ BootForm::password('password_confirmation', null, ['class'=>'form-control input-sm']) }}
+                            {{ BootForm::select('roles[]', 'Roles', $roles, $selected_roles ?? '', ['class'=>'form-control input-sm select2', 'multiple']) }}
+
+                            {{ BootForm::submit('Submit') }}
+
+                        </div>
 
 
                         {{ BootForm::close() }}
@@ -49,22 +56,22 @@
 
     <script>
         ClassicEditor
-            .create( document.querySelector( '.editor' ), {
+            .create(document.querySelector('.editor'), {
                 // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
-            } )
-            .then( editor => {
+            })
+            .then(editor => {
                 window.editor = editor;
-            } )
-            .catch( err => {
-                console.error( err.stack );
-            } );
+            })
+            .catch(err => {
+                console.error(err.stack);
+            });
         // image
-        $('#image_url').on('change',function (img) {
-            var fileInput=this;
+        $('#image_url').on('change', function (img) {
+            var fileInput = this;
             if (fileInput.files[0]) {
-                var reader=new FileReader();
-                reader.onload=function (img) {
-                    $('#img').attr('src',img.target.result);
+                var reader = new FileReader();
+                reader.onload = function (img) {
+                    $('#img').attr('src', img.target.result);
                 };
                 reader.readAsDataURL(fileInput.files[0]);
             }

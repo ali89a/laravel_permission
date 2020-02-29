@@ -13,7 +13,7 @@
         <div class="content container-fluid">
             <div class="row">
                 <div class="col-xs-7">
-                    <h4 class="page-title">role</h4>
+                    <h4 class="page-title">Permission</h4>
                 </div>
 
                 <div class="col-xs-5 text-right m-b-30">

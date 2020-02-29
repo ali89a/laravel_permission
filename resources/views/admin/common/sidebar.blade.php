@@ -9,9 +9,18 @@
                 <li class="submenu">
                     <a href="#"><i class="fa fa-video-camera camera" aria-hidden="true"></i> <span> Access Control</span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled" style="display: none;">
-                        <li>
-                            <a href="{{ route('user.index') }}">User Lists</a>
-                        </li>
+                        @can('access_control_user_controller_index')
+                            <li>
+                                <a href="{{ route('user.index') }}">User Lists</a>
+                            </li>
+                        @endcan
+
+                        {{--@if(\Auth::user()->can('access_control_user_controller_index'))
+                            <li>
+                                <a href="{{ route('user.index') }}">User Lists</a>
+                            </li>
+                        @endif--}}
+
 
                         <li>
                             <a href="{{ route('role.index') }}">Roles</a>
@@ -22,7 +31,7 @@
                         </li>
 
                         <li>
-                            <a href="">Role Permission Matrix</a>
+                            <a href="{{ route('matrix.index') }}">Role Permission Matrix</a>
                         </li>
 
                         <li>

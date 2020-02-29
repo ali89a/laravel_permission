@@ -1,5 +1,5 @@
 @extends('admin.master')
-@section('title','Blog')
+@section('title','Role')
 @section('style')
 
 @endsection
@@ -8,7 +8,7 @@
         <div class="content container-fluid">
             <div class="row">
                 <div class="col-xs-7">
-                    <h4 class="page-title">BLog</h4>
+                    <h4 class="page-title">Role</h4>
                 </div>
 
                 <div class="col-xs-5 text-right m-b-30">

@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c236153-80e2-42f1-af88-03e0c966f3b4" name="Default Changelist" comment="" />
+    <list default="true" id="0c236153-80e2-42f1-af88-03e0c966f3b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/access_control/acl/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccessControl/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccessControl/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/RoutePermitsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RoutePermitsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/access_control/permission/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/access_control/permission/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/access_control/permission/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/access_control/permission/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/access_control/role/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/access_control/role/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/access_control/role/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/access_control/role/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/access_control/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/access_control/user/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/access_control/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/access_control/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/common/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/common/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +28,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -111,8 +129,9 @@
   </component>
   <component name="ProjectId" id="1YFpVFZ80KP1Pu7iuuw0qXUG5iL" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/access_control" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/access_control/acl" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -125,6 +144,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\php\htdocs\laravel-spaite\resources\views\access_control\acl" />
       <recent name="E:\php\htdocs\laravel-spaite\resources\views\access_control" />
     </key>
   </component>
@@ -157,7 +177,10 @@
       <option name="presentableId" value="Default" />
       <updated>1582548218919</updated>
       <workItem from="1582548220831" duration="9977000" />
-      <workItem from="1582820813802" duration="7147000" />
+      <workItem from="1582820813802" duration="7754000" />
+      <workItem from="1582896631367" duration="670000" />
+      <workItem from="1582959570213" duration="3947000" />
+      <workItem from="1582974742088" duration="2635000" />
     </task>
     <servers />
   </component>
@@ -166,5 +189,18 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

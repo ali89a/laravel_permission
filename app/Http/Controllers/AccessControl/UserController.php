@@ -8,6 +8,7 @@ use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
+
     protected function path(string $suffix){
         return "access_control.user.{$suffix}";
     }
@@ -43,7 +44,6 @@ class UserController extends Controller
         $request->validate([
 
             'name'=>'required|string',
-            'username'=>'required|string|unique:users',
             'email'=>'required|email|unique:users',
             'roles'=>'required|array',
             'password'=>'required|string|min:8|confirmed'
@@ -52,7 +52,6 @@ class UserController extends Controller
 
         $new_user=\App\User::create([
             'name'=>$request->get('name'),
-            'username'=>$request->get('username'),
             'email'=>$request->get('email'),
             'password'=>bcrypt($request->get('password'))
         ]);

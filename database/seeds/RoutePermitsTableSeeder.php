@@ -30,10 +30,6 @@ class RoutePermitsTableSeeder extends Seeder
             $permission=\Str::snake(str_replace([$passport_namespace, '@', '\\'], ['', '_', ''], $action_name));
             $permission=\Str::snake(str_replace([$http_namespace,'@','\\'], ['', '_', ''], $action_name));
 
-
-//            $permission=\Str::snake(str_replace([$http_namespace,'@','\\'], ['', '_', ''], $action_name));
-
-
 //            if(empty($permission)) dd($action_name);
 
             if(\DB::table('route_permits')->where('permission', $permission)->exists()) continue;

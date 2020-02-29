@@ -1,5 +1,5 @@
 @extends('admin.master')
-@section('title','')
+@section('title','Role')
 @section('style')
     <link rel="stylesheet" href="{{ asset('assets/admin/ckeditor/sample/css/sample.css') }}">
     <style>
@@ -13,7 +13,7 @@
         <div class="content container-fluid">
             <div class="row">
                 <div class="col-xs-7">
-                    <h4 class="page-title">role</h4>
+                    <h4 class="page-title">Role</h4>
                 </div>
 
                 <div class="col-xs-5 text-right m-b-30">

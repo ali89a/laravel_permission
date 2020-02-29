@@ -11,10 +11,13 @@
                     <h4 class="page-title">BLog</h4>
                 </div>
 
-                <div class="col-xs-5 text-right m-b-30">
-                    <a href="{{ route('user.create') }}" class="btn btn-primary rounded"><i class="fa fa-plus"></i>
-                        Add New</a>
-                </div>
+                @if(\Auth::user()->can('access_control_user_controller_create'))
+                    <div class="col-xs-5 text-right m-b-30">
+                        <a href="{{ route('user.create') }}" class="btn btn-primary rounded"><i class="fa fa-plus"></i>
+                            Add New</a>
+                    </div>
+                @endif
+
             </div>
             <div class="card-box">
                 <div class="row">
