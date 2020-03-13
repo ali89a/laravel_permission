@@ -13,7 +13,7 @@
         <div class="content container-fluid">
             <div class="row">
                 <div class="col-xs-7">
-                    <h4 class="page-title">Blog</h4>
+                    <h4 class="page-title">User</h4>
                 </div>
 
                 @can('access_control_user_controller_index')

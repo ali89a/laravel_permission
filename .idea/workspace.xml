@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c236153-80e2-42f1-af88-03e0c966f3b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-spaite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-spaite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/access_control/route_permit/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccessControl/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccessControl/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/access_control/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/access_control/user/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/access_control/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/access_control/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/common/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/common/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +128,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/access_control/acl" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/access_control/route_permit" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -137,6 +141,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\php\htdocs\laravel-spaite\resources\views\access_control\route_permit" />
       <recent name="E:\php\htdocs\laravel-spaite\resources\views\access_control\acl" />
       <recent name="E:\php\htdocs\laravel-spaite\resources\views\access_control" />
     </key>
@@ -165,7 +170,7 @@
       <workItem from="1583416610074" duration="1658000" />
       <workItem from="1583475853965" duration="175000" />
       <workItem from="1584082210102" duration="3935000" />
-      <workItem from="1584106493644" duration="1469000" />
+      <workItem from="1584106493644" duration="11064000" />
     </task>
     <servers />
   </component>
@@ -174,6 +179,7 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -187,5 +193,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="462" y="113" key="FileChooserDialogImpl" timestamp="1584109816449">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="462" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1584109816449" />
+    <state x="339" y="22" width="672" height="676" key="search.everywhere.popup" timestamp="1584119466016">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="22" width="672" height="676" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1584119466016" />
   </component>
 </project>

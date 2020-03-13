@@ -1,5 +1,5 @@
 @extends('admin.master')
-@section('title','Blog')
+@section('title','User')
 @section('style')
 
 @endsection
@@ -8,15 +8,16 @@
         <div class="content container-fluid">
             <div class="row">
                 <div class="col-xs-7">
-                    <h4 class="page-title">BLog</h4>
+                    <h4 class="page-title">User</h4>
                 </div>
 
-                @if(\Auth::user()->can('access_control_user_controller_create'))
+                @can('access_control_user_controller_create')
                     <div class="col-xs-5 text-right m-b-30">
                         <a href="{{ route('user.create') }}" class="btn btn-primary rounded"><i class="fa fa-plus"></i>
                             Add New</a>
                     </div>
-                @endif
+                @endcan
+
 
             </div>
             <div class="card-box">
@@ -47,11 +48,13 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <center>
-                                            <div class="btn-group"><a href="{{ route('user.edit', $row) }}"
-                                                                      class="btn btn-xs btn-primary"><i
-                                                        class="fa fa-pencil-square-o"></i> Edit</a></div>
-                                        </center>
+                                        @can('access_control_user_controller_edit')
+                                            <center>
+                                                <div class="btn-group"><a href="{{ route('user.edit', $row) }}"
+                                                                          class="btn btn-xs btn-primary"><i
+                                                            class="fa fa-pencil-square-o"></i> Edit</a></div>
+                                            </center>
+                                        @endcan
                                     </td>
                                 </tr>
                             @endforeach
