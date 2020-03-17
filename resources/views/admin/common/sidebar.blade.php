@@ -35,7 +35,7 @@
                         </li>
 
                         <li>
-                            <a href="">User Direct Permissions</a>
+                            <a href="{{ route('user-permission-matrix') }}">User Direct Permissions</a>
                         </li>
 
                         @can('access_control_route_permit_controller_index')

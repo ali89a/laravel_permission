@@ -110,4 +110,50 @@ class AclController extends Controller
         return response()->json('Role permission matrix changed successfully!.', 200);
 
     }
+
+    public function user_permission_matrix(){
+
+        $data=[
+            'users'=>\App\User::all(),
+            'permissions'=>Permission::all(),
+            'model_has_permissions'=>\App\ModelHasPermission::all(),
+            'cross_check'=>function($model_has_permissions, $user_id, $permission_id){
+
+                foreach($model_has_permissions as $row){
+                    if($user_id==$row->model_id && $permission_id==$row->permission_id){
+                        return 'checked';
+                    }
+                }
+
+                return '';
+            }
+        ];
+
+        //dd($data);
+
+        return view($this->path('user_permission_matrix'), $data);
+
+    }
+
+    public function store_user_permission_matrix(Request $request){
+
+        $matrix=$request->get('matrix');
+
+        \App\ModelHasPermission::truncate();
+
+        if(is_array($matrix)){
+
+            foreach($matrix as $user_id=>$permissions){
+
+                $user=\App\User::find($user_id);
+                $user->syncPermissions($permissions);
+
+            }
+
+        }
+
+        \Toastr::success('Information Updated Successfully!.', '', ["progressbar" => true]);
+        return redirect()->back();
+
+    }
 }

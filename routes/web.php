@@ -28,12 +28,13 @@ Route::middleware('auth')->namespace('AccessControl')->prefix('access-control')-
     Route::resource('matrix', 'AclController');
     Route::post('change-role-permission', 'AclController@change_role_permission');
 
-            Route::resource('route-permit', 'RoutePermitController');
+    Route::resource('route-permit', 'RoutePermitController');
+
+    Route::get('user-permission-matrix', 'AclController@user_permission_matrix')->name('user-permission-matrix');
+    Route::post('user-permission-matrix', 'AclController@store_user_permission_matrix')->name('user-permission-matrix.store');
 
 //        Route::get('role-user-matrix', 'AclController@role_user_matrix')->name('role-user-matrix');
 //        Route::post('role-user-matrix', 'AclController@store_role_user_matrix')->name('role-user-matrix.store');
-//        Route::get('user-permission-matrix', 'AclController@user_permission_matrix')->name('user-permission-matrix');
-//        Route::post('user-permission-matrix', 'AclController@store_user_permission_matrix')->name('user-permission-matrix.store');
 
 
 //        Route::resource('oauth-access', 'OAuthAccessController');
