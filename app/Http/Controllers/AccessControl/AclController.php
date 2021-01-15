@@ -136,20 +136,13 @@ class AclController extends Controller
     }
 
     public function store_user_permission_matrix(Request $request){
-
         $matrix=$request->get('matrix');
-
         \App\ModelHasPermission::truncate();
-
         if(is_array($matrix)){
-
             foreach($matrix as $user_id=>$permissions){
-
                 $user=\App\User::find($user_id);
                 $user->syncPermissions($permissions);
-
             }
-
         }
 
         \Toastr::success('Information Updated Successfully!.', '', ["progressbar" => true]);

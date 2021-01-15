@@ -33,6 +33,10 @@ class UsersTableSeeder extends Seeder
                 'email'=>'asraful3161@gmail.com',
                 'password'=>bcrypt('12345678')
             ],[
+                'name'=>'Mohammad Ali',
+                'email'=>'ali@gmail.com',
+                'password'=>bcrypt('12345678')
+            ],[
                 'name'=>'user',
                 'email'=>'user@gmail.com',
                 'password'=>bcrypt('12345678')

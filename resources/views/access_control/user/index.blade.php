@@ -50,9 +50,11 @@
                                     <td>
                                         @can('access_control_user_controller_edit')
                                             <center>
-                                                <div class="btn-group"><a href="{{ route('user.edit', $row) }}"
-                                                                          class="btn btn-xs btn-primary"><i
-                                                            class="fa fa-pencil-square-o"></i> Edit</a></div>
+                                                <div class="btn-group">
+                                                    <a href="{{ route('user.edit', $row) }}" 
+                                                        class="btn btn-xs btn-primary">
+                                                        <i class="fa fa-pencil-square-o"></i> Edit</a>
+                                                    </div>
                                             </center>
                                         @endcan
                                     </td>

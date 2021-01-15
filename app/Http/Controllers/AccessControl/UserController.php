@@ -114,7 +114,6 @@ class UserController extends Controller
         //dd($request->all());
 
         $request->validate([
-
             'name' => 'required|string',
             'email' => 'required|email|unique:users,email,' . $user->id,
             'roles' => 'required|array',
